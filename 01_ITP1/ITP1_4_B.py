@@ -1,4 +1,17 @@
-r = float(input())
-a = float(r * r * 3.141592653589)
-b = float(2 * r * 3.141592653589)
-print(round(a, 6), round(b, 6))
+a, op, b = input().split()
+a = int(a)
+b = int(b)
+
+while op != "?":
+    if op == "+":
+        print(a + b)
+    elif op == "-":
+        print(a - b)
+    elif op == "*":
+        print(a * b)
+    elif op == "/":
+        print(a // b)
+
+    a, op, b = input().split()
+    a = int(a)
+    b = int(b)
