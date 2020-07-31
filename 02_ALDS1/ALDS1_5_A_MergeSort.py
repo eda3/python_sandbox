@@ -1,7 +1,7 @@
 n = int(input())
-*li, = map(int, input().split())
+(*li,) = map(int, input().split())
 input()
-*Q, = map(int, input().split())
+(*Q,) = map(int, input().split())
 
 bits = 1
 for i in li:
@@ -14,5 +14,5 @@ for i in li:
 # print()
 for q in Q:
     # print(f"{bin(bits)=}")
-    print("yes"*((bits >> q) & 1) or "no")
+    print("yes" * ((bits >> q) & 1) or "no")
     # print()

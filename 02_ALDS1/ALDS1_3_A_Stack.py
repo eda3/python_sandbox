@@ -1,4 +1,5 @@
 from collections import deque
+
 d = deque()
 li = list(input().split())
 for i in li:

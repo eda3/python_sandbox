@@ -4,7 +4,7 @@ def is_prime(q, k=50):
         return False
     elif q == 2:
         return True
-    return pow(2, q-1, q) == 1
+    return pow(2, q - 1, q) == 1
 
 
 n = int(input())
@@ -15,4 +15,3 @@ for i in range(n):
         result += 1
 
 print(result)
-

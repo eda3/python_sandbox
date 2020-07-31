@@ -1,4 +1,5 @@
 import sys
+
 max_value = 1e10
 min_value = -max_value
 input()

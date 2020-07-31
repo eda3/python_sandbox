@@ -4,15 +4,15 @@ D = C.copy()
 N = len(C)
 
 # バブルソート
-for i in range(0, N-1, 1):
-    for j in range(N-1, i, -1):
-        if C[j][1] < C[j-1][1]:
+for i in range(0, N - 1, 1):
+    for j in range(N - 1, i, -1):
+        if C[j][1] < C[j - 1][1]:
             tmp = C[j]
-            C[j] = C[j-1]
-            C[j-1] = tmp
+            C[j] = C[j - 1]
+            C[j - 1] = tmp
 
 # 選択ソート
-for i in range(0, N-1, 1):
+for i in range(0, N - 1, 1):
     minj = i
     for j in range(i, N, 1):
         if D[j][1] < D[minj][1]:

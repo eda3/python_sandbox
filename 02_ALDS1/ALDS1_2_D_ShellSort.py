@@ -12,10 +12,10 @@ def insert_sort(A, n, g):
         j = i - g
         # print(f"{j=}")
         while 0 <= j and v < A[j]:
-            A[j+g] = A[j]
+            A[j + g] = A[j]
             j = j - g
             cnt += 1
-        A[j+g] = v
+        A[j + g] = v
         # print(f"aft{A=}")
 
 
@@ -24,8 +24,8 @@ A = [x for x in map(int, sys.stdin)]
 
 cnt = 0
 G = [1]
-while n >= 3*G[-1] + 1:
-    G.append(3*G[-1] + 1)
+while n >= 3 * G[-1] + 1:
+    G.append(3 * G[-1] + 1)
 
 
 for g in G[::-1]:
@@ -36,4 +36,3 @@ print(*G)
 print(cnt)
 for a in A:
     print(a)
-

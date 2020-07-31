@@ -6,7 +6,7 @@ def recursive_diff_check(dq):
 
     dq_len = len(dq)
     for i in range(dq_len):
-        for j in range(i+1, dq_len, 1):
+        for j in range(i + 1, dq_len, 1):
             # print(f"{j=}, {i=}")
             # print(f"{dq[i]=}, {dq[j]=}")
             tmp = dq[j] - dq[i]
