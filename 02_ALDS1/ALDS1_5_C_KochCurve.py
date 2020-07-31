@@ -1,7 +1,7 @@
 import math
 
 
-def kock(n, p1_x, p1_y, p2_x, p2_y):
+def koch(n, p1_x, p1_y, p2_x, p2_y):
     if n == 0:
         print(f"{p1_x:.8f} {p1_y:.8f}")
         return
