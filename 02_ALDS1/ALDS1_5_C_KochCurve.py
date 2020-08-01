@@ -24,12 +24,12 @@ def koch(n, p1_x, p1_y, p2_x, p2_y):
     )
 
     # 線分 (p1,s)、線分 (s,u)、線分 (u,t)、線分 (t,p2)に対して再帰的に同じ操作を繰り返す
-    kock(n - 1, p1_x, p1_y, s_x, s_y)
-    kock(n - 1, s_x, s_y, u_x, u_y)
-    kock(n - 1, u_x, u_y, t_x, t_y)
-    kock(n - 1, t_x, t_y, p2_x, p2_y)
+    koch(n - 1, p1_x, p1_y, s_x, s_y)
+    koch(n - 1, s_x, s_y, u_x, u_y)
+    koch(n - 1, u_x, u_y, t_x, t_y)
+    koch(n - 1, t_x, t_y, p2_x, p2_y)
 
 
 n = int(input())
-kock(n, 0, 0, 100, 0)
+koch(n, 0, 0, 100, 0)
 print("100.00000000 0.00000000")
