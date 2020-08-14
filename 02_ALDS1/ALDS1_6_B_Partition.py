@@ -5,7 +5,6 @@ x = A[-1]
 i = -1
 
 r = len(A)
-# 数列の一番最後の一個手前まで繰り返す
 for j in range(r):
     print(f"{A=}")
     print(f"{i=}")
